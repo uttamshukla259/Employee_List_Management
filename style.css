@@ -1,0 +1,180 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 20px 50px;
+}
+
+.main form .sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+form .sub .inputs {
+    margin-bottom: 15px;
+    width: 30%;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.sub .inputs .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.sub .inputs input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    color: lightgrey;
+    background-color: black;
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+
+#empBtn {
+    font-weight: bold;
+    height: 35px;
+    width: 100px;
+    margin: 40px 40px 40px 0px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.added {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid rgb(230, 217, 217);
+    width: 40vw;
+    gap: 3%;
+    height: 7vh;
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+.dltBtn {
+    color: black;
+    border: none;
+    padding: 10x 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 33px;
+    height: 32px;
+    width: 100px;
+    /* margin-top: 40px; */
+
+
+
+}
+
+#new-div {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+
+.dlt-div {
+    /* border: 2px solid yellow; */
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 30px;
+    height: 62px;
+    font-size: 15px;
+    width: 10%;
+}
+
+#alreadyAdded {
+    color: gray;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .main {
+        margin: 20px 20px;
+    }
+
+    .main form .sub {
+        display: grid;
+        gap: 10px;
+
+    }
+
+    .main form .sub .inputs {
+        width: 90%;
+
+    }
+
+    .added {
+        width: 90vw;
+    }
+
+    #new-div {
+        width: 100%;
+    }
+
+    .dlt-div {
+        width: 15%;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main form .sub .inputs {
+        width: 100%;
+    }
+
+    .added {
+        width: 100%;
+    }
+
+    .dltBtn {
+        margin-left: 10px;
+    }
+
+    #alreadyAdded {
+        font-size: 12px;
+    }
+}
